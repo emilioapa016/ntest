@@ -13,3 +13,5 @@ Sigue estos pasos para instalar y configurar el proyecto en tu entorno local.
 ```bash
 git clone https://github.com/emilioapa016/ntest.git
 ```
+
+### 2. Acceder a localhost/ntest/index.html
