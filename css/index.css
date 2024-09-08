@@ -1,0 +1,38 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar{
+    background-color: #77A6F2;
+}
+
+.form-label{
+    font-weight: bold;
+    color: #2E428D;
+    font-size: 0.9rem;
+}
+
+.form-control{
+    border-color: #CDD8FF !important;
+    padding: 12px;
+    border-radius: 10px !important;
+    font-weight: 500;
+}
+
+.form-control:focus{
+    box-shadow: none;
+}
+
+legend{
+    letter-spacing: 0.025rem;
+    color: #4F8CEE;
+    font-weight: 500;
+}
+
+.form-select{
+    font-weight: 500;
+}
+
+footer{
+    background-color: #77A6F2;
+}

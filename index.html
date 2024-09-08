@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <link rel="icon" href="icon.ico" type="image/x-icon" />
+    <!-- Preconnect para mejorar el rendimiento -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+    <!-- Importar la fuente Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/fontsawesome/css/all.min.css" rel="stylesheet" />
+    <link href="./css/index.css" rel="stylesheet" />
+    <title>Ntest</title>
+  </head>
+
+  <body>
+    <nav class="navbar py-4 px-2">
+      <div class="container-fluid d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <i class="fa-solid fa-circle" style="color: #1a4282; font-size: 1.5em;"></i>
+          <h5 class="mb-0 ms-2" style="color: #1a4282; font-weight: 600;">N</h5>
+          <h5 class="mb-0" style="color: white; font-weight: 600;">test</h5>
+        </div>
+        <i class="fa-solid fa-bars" style="color: #1a4282; font-size: 1.5em;"></i>
+      </div>
+    </nav>
+    <div class="py-5 px-2" style="background-color: #E7F3FE;">
+        <h1 class="fw-bold lh-1" style="color: #1a4282; font-size: 36px;">Trabajá con nosotros</h1>
+        <p style="color: #666972; font-weight: 500;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="py-4 px-3">
+        <form>
+            <legend class="mb-3">Datos Personales</legend>
+            <div class="mb-4">
+                <label for="nombre" class="form-label">Nombre y Apellido</label>
+                <input type="text" class="form-control border border-2" id="nombre" placeholder="Nombre y Apellido">
+            </div>
+            <div class="mb-4">
+                <label for="nacimiento" class="form-label">Fecha de Nacimiento</label>
+                <input type="date" class="form-control border border-2" id="nacimiento" placeholder="01/01/1980">
+            </div>
+            <div class="mb-4">
+                <label for="celular" class="form-label">Número de Celular</label>
+                <input type="text" class="form-control border border-2" id="celular" placeholder="09XX XXX XXX">
+            </div>
+            <hr>
+            <legend class="mb-3">Experiencia Laboral</legend>
+            <div id="expContainer" class="mb-4"></div>
+            <div class="mb-4">
+                <label for="empresa" class="form-label">Empresa</label>
+                <input type="text" class="form-control border border-2" id="empresa" placeholder="Nombre de la Empresa">
+            </div>
+            <div class="mb-4">
+                <label for="cargo" class="form-label">Fecha de Nacimiento</label>
+                <input type="text" class="form-control border border-2" id="cargo" placeholder="Ingresá el Cargo que ocupaste">
+            </div>
+            <div class="mb-4">
+                <label for="desde" class="form-label">Fecha desde</label>
+                <input type="date" class="form-control border border-2" id="desde" placeholder="01/01/1980">
+            </div>
+            <div class="mb-4">
+                <label for="hasta" class="form-label">Fecha hasta</label>
+                <input type="date" class="form-control border border-2" id="hasta" placeholder="01/01/1980">
+            </div>
+            <div class="mb-4 p-3 rounded-3 d-flex justify-content-between align-items-center" style="background-color: #B9D4FF; cursor: pointer; font-weight: 500;" id="btnExp">
+                <p class="m-0" style="color: #1a4282">Agregar Experiencia</p>
+                <i class="fa-solid fa-plus" style="color: #1a4282"></i>
+            </div>
+            <hr>
+            <legend class="mb-3">Idiomas</legend>
+            <div id="idiomasContainer" class="mb-4">
+            </div>
+            <div class="mb-4">
+                <label for="idioma" class="form-label">Idioma</label>
+                <select class="form-select" id="idioma">
+                    <option value="" selected disabled>Selecciona un idioma</option>
+                    <option value="Español">Español</option>
+                    <option value="Inglés">Inglés</option>
+                    <option value="Portugués">Portugués</option>
+                    <option value="Alemán">Alemán</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="nivel" class="form-label">Nivel</label>
+                <select class="form-select" id="nivel">
+                    <option value="" selected disabled>Selecciona un nivel</option>
+                    <option value="Básico">Básico</option>
+                    <option value="Intermedio">Intermedio</option>
+                    <option value="Avanzado">Avanzado</option>
+                </select>
+            </div>
+            <div class="mb-4 p-3 rounded-3 d-flex justify-content-between align-items-center" style="background-color: #B9D4FF; cursor: pointer; font-weight: 500;" id="btnIdioma">
+                <p class="m-0" style="color: #1a4282">Agregar Idioma</p>
+                <i class="fa-solid fa-plus" style="color: #1a4282"></i>
+            </div>
+            <hr>
+            <legend class="mb-3 text-center">Adjuntar Archivo</legend>
+            <p class="text-center">(Formato Pdf o Word, peso máximo 10mb)</p>
+            <div class="mb-4 p-3 rounded-3 d-flex justify-content-center align-items-center" style="background-color: #B9D4FF; cursor: pointer; font-weight: 500;">
+                <i class="fa-solid fa-paperclip me-2" style="color: #1a4282"></i>
+                <p class="m-0" style="color: #1a4282">Subir CV</p>
+            </div>
+            <hr>
+            <div class="mb-4 p-3 rounded-3 d-flex justify-content-center align-items-center" style="background-color: #0D4BAE; cursor: pointer;" id="btnPost">
+                <p class="m-0" style="color: white; letter-spacing: 0.1rem;">POSTULARME</p>
+            </div>
+        </form>
+    </div>
+    <div class="modal fade" id="postModal" tabindex="-1" aria-labelledby="postModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content p-4">
+                <div class="modal-body text-center">
+                    <i class="fa-sharp fa-solid fa-circle-check mb-4" style="color: #D9F4EC; background-color: #0EDFA1; border-radius: 50%; font-size: 100px;"></i>
+                    <h4 class="fw-bold" style="color: #1a4282">Tu postulación fue enviada con éxito</h4>
+                    <button type="button" class="btn py-3 mt-3 w-100" style="background-color: #1a4282; letter-spacing: 0.1rem; color: white; border-radius: 10px;" data-bs-dismiss="modal">ACEPTAR</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="py-4">
+        <div class="container-fluid d-flex justify-content-center align-items-center">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-circle" style="color: #1a4282; font-size: 1.5em;"></i>
+              <h5 class="mb-0 ms-2" style="color: #1a4282; font-weight: 600;">N</h5>
+              <h5 class="mb-0" style="color: white; font-weight: 600;">test</h5>
+            </div>
+          </div>
+    </footer>
+    <script src="./assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
